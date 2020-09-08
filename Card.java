@@ -1,15 +1,17 @@
 /**
  * Card.java
+	NEW CHANGE FOR WEB DESIGN!@!!!!!!!
+
  *
  * <code>Card</code> represents a playing card.
   ************************************************************************
  * This is the original AP Elevens Lab Java program code.
- * 03-29-15 slightly altered by Leon Schram 
+ * 03-29-15 slightly altered by Leon Schram
  * who likes curly braces aligned.
  *
  * DO NOT ALTER THIS CLASS FOR LAB16!!!!!
  */
-public class Card 
+public class Card
 {
 
 	/**
@@ -38,7 +40,7 @@ public class Card
 	 * @param cardPointValue an <code>int</code> value
 	 *                  containing the point value of the card
 	 */
-	public Card(String cardRank, String cardSuit, int cardPointValue) 
+	public Card(String cardRank, String cardSuit, int cardPointValue)
    {
 		//initializes a new Card with the given rank, suit, and point value
 		rank = cardRank;
@@ -51,7 +53,7 @@ public class Card
 	 * Accesses this <code>Card's</code> suit.
 	 * @return this <code>Card's</code> suit.
 	 */
-	public String suit() 
+	public String suit()
    {
 		return suit;
 	}
@@ -60,7 +62,7 @@ public class Card
 	 * Accesses this <code>Card's</code> rank.
 	 * @return this <code>Card's</code> rank.
 	 */
-	public String rank() 
+	public String rank()
    {
 		return rank;
 	}
@@ -69,7 +71,7 @@ public class Card
 	 * Accesses this <code>Card's</code> point value.
 	 * @return this <code>Card's</code> point value.
 	 */
-	public int pointValue() 
+	public int pointValue()
    {
 		return pointValue;
 	}
@@ -80,7 +82,7 @@ public class Card
 	 *              are equal to those of the argument;
 	 *         false otherwise.
 	 */
-	public boolean matches(Card otherCard) 
+	public boolean matches(Card otherCard)
    {
 		return otherCard.suit().equals(this.suit())
 			&& otherCard.rank().equals(this.rank())
@@ -98,9 +100,9 @@ public class Card
 	 *         and point value of the card.
 	 */
 	@Override
-	public String toString() 
+	public String toString()
    {
 		return rank + " of " + suit + " (point value = " + pointValue + ")";
 	}
-   
+
 }
